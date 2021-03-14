@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.slide {
+    width: 100vw;
+    height: 100vh;
+}
+/* Contenu horizontal */
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 400vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+/* Container */
+.outer-wrapper {
+    height: 100vw;
+    width: 100vh;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    -ms-overflow-style: none;
+}
+/* Permet d'enlever la scrollbar latéral */
+::-webkit-scrollbar {
+    display: none;
+}
+/* Slide n°1 */
+.one:before {
+    content: "";
+    display: inline-block;
+    height: 100vh;
+    width: 100vw;
+    background: url("/../images/backgrounds/bg-1.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    opacity: 0.6;
+}
+
+.one {
+
+}
+
+/* Slide n°2 */
+
+.two:before {
+    content: "";
+    display: inline-block;
+    height: 100vh;
+    width: 100vw;
+    background: url("/../images/backgrounds/bg-2.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    opacity: 0.6;
+}
+
+.two {
+
+}
+/* Slide n°3 */
+
+.three:before {
+    content: "";
+    display: inline-block;
+    height: 100vh;
+    width: 100vw;
+    background: url("/../images/backgrounds/bg-3.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    opacity: 0.6;
+}
+
+
+.three {
+
+}
+
+/* Slide n°4 */
+
+.four:before {
+    content: "";
+    display: inline-block;
+    height: 100vh;
+    width: 100vw;
+    background: url("/../images/backgrounds/bg-4.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    opacity: 0.6;
+}
+
+.four {
+
+}
+
+/* Slide n°5 */
+
+.five:before {
+    content: "";
+    display: inline-block;
+    height: 100vh;
+    width: 100vw;
+    background: url("/../images/backgrounds/bg-5.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    opacity: 0.6;
+}
+
+.five {
+
+
+}
+
+/* Slide n°6 */
+
+.six:before {
+    content: "";
+    display: inline-block;
+    height: 100vh;
+    width: 100vw;
+    background: url("/../images/backgrounds/bg-6.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    opacity: 0.6;
+}
+
+.six {
+
+}
