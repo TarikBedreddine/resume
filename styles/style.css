@@ -1,3 +1,5 @@
+/* GLOBAL PROPERTIES */
+
 * {
     box-sizing: border-box;
 }
@@ -8,12 +10,28 @@ body {
     background-color: black;
 }
 
+h2 {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 98px;
+    text-align: center;
+    letter-spacing: 0.425em;
+    color: #330036;
+}
+
+.container {
+    margin: 50px 0;
+}
+
 .slide {
     position: relative;
     width: 100vw;
     height: 100vh;
 }
-/* Contenu horizontal */
+/* HORIZONTAL CONTENT  */
+
 .wrapper {
     display: flex;
     flex-direction: row;
@@ -21,7 +39,8 @@ body {
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
 }
-/* Container */
+/* CONTAINER */
+
 .outer-wrapper {
     height: 100vw;
     width: 100vh;
@@ -32,19 +51,20 @@ body {
     position: absolute;
     -ms-overflow-style: none;
 }
-/* Permet d'enlever la scrollbar latéral */
+/* REMOVE LATERAL SCROLL BAR */
+
 ::-webkit-scrollbar {
     display: none;
 }
-/* Slide n°1 */
+
+/* SLIDE N°1 */
+
 .one:before {
     content: "";
     display: inline-block;
     height: 100vh;
     width: 100vw;
-    background: url("/../images/backgrounds/bg-1.png");
-    background-position: center center;
-    background-repeat: no-repeat;
+    background: url("/../images/backgrounds/bg-1.png") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -64,7 +84,7 @@ body {
     height: 500px;
     color: white;
     text-align: center;
-    margin: 0 auto;
+    margin: 30px 0;
 }
 
 .content-one h1 {
@@ -103,16 +123,14 @@ body {
     border-radius: 50% 20% / 20% 50%;
 }
 
-/* Slide n°2 */
+/* SLIDE N°2 */
 
 .two:before {
     content: "";
     display: inline-block;
     height: 100vh;
     width: 100vw;
-    background: url("/../images/backgrounds/bg-2.png");
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url("/../images/backgrounds/bg-2.png") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -120,18 +138,79 @@ body {
 }
 
 .two {
-
+    display: flex;
+    justify-content: center;
 }
-/* Slide n°3 */
+
+.content-two {
+    position: absolute;
+    top: 50px;
+    width: 1000px;
+    height: 500px;
+    color: white;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.programming-languages {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.programming-languages img{
+    width: 100px;
+    height: auto;
+}
+
+.tools-container {
+    display: flex;
+}
+
+.tools-container .empty {
+    width: 50%;
+}
+
+.tools-container .tools img:first-child {
+    width: 57px;
+    height: auto;
+}
+.tools-container .tools img:nth-child(2) {
+    width: 61px;
+    height: auto;
+}
+.tools-container .tools img:nth-child(3) {
+    width: 131px;
+    height: auto;
+}
+.tools-container .tools img:last-child {
+    width: 163px;
+    height: auto;
+}
+
+.tools-container .tools {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 200px 0 200px;
+}
+
+.rectangle-background {
+    width: 1000px;
+    height: 320px;
+    background: linear-gradient(0deg, #47565D 6.58%, rgba(133, 108, 107, 0) 100%);
+    border-radius: 36px;
+    margin-top: 90px;
+}
+
+/* SLIDE N°3 */
 
 .three:before {
     content: "";
     display: inline-block;
     height: 100vh;
     width: 100vw;
-    background: url("/../images/backgrounds/bg-3.png");
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url("/../images/backgrounds/bg-3.png") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -143,16 +222,14 @@ body {
 
 }
 
-/* Slide n°4 */
+/* SLIDE N°4 */
 
 .four:before {
     content: "";
     display: inline-block;
     height: 100vh;
     width: 100vw;
-    background: url("/../images/backgrounds/bg-4.png");
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url("/../images/backgrounds/bg-4.png") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -163,16 +240,14 @@ body {
 
 }
 
-/* Slide n°5 */
+/* SLIDE N°5 */
 
 .five:before {
     content: "";
     display: inline-block;
     height: 100vh;
     width: 100vw;
-    background: url("/../images/backgrounds/bg-5.png");
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url("/../images/backgrounds/bg-5.png") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -184,16 +259,14 @@ body {
 
 }
 
-/* Slide n°6 */
+/* SLIDE N°6 */
 
 .six:before {
     content: "";
     display: inline-block;
     height: 100vh;
     width: 100vw;
-    background: url("/../images/backgrounds/bg-6.png");
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url("/../images/backgrounds/bg-6.png") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
