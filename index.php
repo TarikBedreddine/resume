@@ -127,10 +127,13 @@
 
                 </section>
             </div>
+
+<!--            SLIDE 5 HOBBYS-->
+
             <div class="slide five">
-                <section class="content-five">
+                <section class="content-hobby">
                     <h2>Hobbys</h2>
-                    <div class="container">
+                    <div class="hobby-container">
                         <article class="hobby-card">
                             <img src="images/slide-5/trading.jpg" alt="Image de Trading">
                             <span class="text-center">Trading</span>
@@ -144,14 +147,45 @@
                             <span class="text-center">Jeux-vidéos</span>
                         </article>
                     </div>
-
-
-
                 </section>
             </div>
+
+<!--            SLIDE CONTACT FORM -->
+
             <div class="slide six">
-                Slide Six
+                <section class="content-form">
+                    <h2>Me contacter</h2>
+                    <div class="form-container">
+                        <form action="">
+                            <div class="name">
+                                <input type="text" name="nomprenom" id="nom_et_prenom" required>
+                                <label for="nom_et_prenom">Votre Nom et Prénom : </label>
+                            </div>
+                            <div class="contact-raison">
+                                <select name="raisoncontact" id="raison_de_contact" required>
+                                    <option value=""></option>
+                                    <option value="Demande de renseignement">Demande de renseignement</option>
+                                    <option value="RDV">Programmer un RDV</option>
+                                    <option value="Autre">Autre</option>
+                                </select>
+                                <label for="raison_de_contact">Motif de votre contact : </label>
+                            </div>
+                            <div class="email">
+                                <input type="email" name="email" id="email" required>
+                                <label for="email">Votre adresse e-mail : </label>
+                            </div>
+                            <div class="message">
+                                <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                                <label for="message">Message : </label>
+                            </div>
+                            <div class="send">
+                                <input type="submit" value="Envoyer">
+                            </div>
+                        </form>
+                    </div>
+                </section>
             </div>
+
         </div>
     </div>
 </main>

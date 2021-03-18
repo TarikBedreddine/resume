@@ -19,6 +19,7 @@ h2 {
     text-align: center;
     letter-spacing: 0.425em;
     color: #330036;
+    margin-top: 25px
 }
 
 h3 {
@@ -28,8 +29,8 @@ h3 {
     font-size: 30px;
     line-height: 49px;
     text-align: center;
-    color: #FFFFFF;
-    text-shadow: 0 4px 10px #330036;
+    color: white;
+    text-shadow: 0 2px 4px #330036;
 }
 
 .container {
@@ -211,8 +212,7 @@ h3 {
     width: 1000px;
     height: 320px;
     background: linear-gradient(0deg, #47565D 6.58%, rgba(133, 108, 107, 0) 100%);
-    border-radius: 36px;
-    margin-top: 90px;
+    margin-top: 50px;
 }
 
 /* SLIDE N°3 */
@@ -236,20 +236,20 @@ h3 {
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 .content-three .bg-rectangle-1 {
     background: linear-gradient(100.13deg, rgba(241, 250, 238, 0.2) 6.8%, rgba(241, 250, 238, 0.05) 94.47%);
-    width: 70%;
+    width: 60%;
     height: 45%;
     text-align: center;
 }
 
 .content-three .bg-rectangle-2 {
     background: linear-gradient(273.14deg, rgba(241, 250, 238, 0.28) 66.73%, rgba(241, 250, 238, 0.1) 91.89%);
-    width: 70%;
+    width: 60%;
     height: 45%;
     text-align: center;
 }
@@ -409,7 +409,7 @@ input:checked ~ .accordion-label::after {
     align-items: center;
 }
 
-.content-five {
+.content-hobby {
     position: relative;
     width: 90%;
     height: 80%;
@@ -419,11 +419,12 @@ input:checked ~ .accordion-label::after {
     align-items: center;
 }
 
-.content-five .container {
+.content-hobby .hobby-container {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 30px;
 }
 
 .hobby-card {
@@ -433,7 +434,7 @@ input:checked ~ .accordion-label::after {
     background-color: black;
     text-align: center;
     transition: 0.2s all ease-out;
-    margin-left: 35px;
+    margin-left: 55px;
 }
 .hobby-card:before {
     content: "";
@@ -498,7 +499,7 @@ input:checked ~ .accordion-label::after {
 
 .six:before {
     content: "";
-    display: inline-block;
+    position: absolute;
     height: 100vh;
     width: 100vw;
     background: url("/../images/backgrounds/bg-6.png") no-repeat center center;
@@ -509,5 +510,124 @@ input:checked ~ .accordion-label::after {
 }
 
 .six {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.content-form {
+    position: relative;
+    width: 90%;
+    height: 80%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    width: 50%;
+}
+
+.content-form input[type="text"], input[type="email"], select, textarea {
+    width: 100%;
+    height: 35px;
+    border: white;
+    outline: none;
+}
+
+
+label[for="nom_et_prenom"], label[for="raison_de_contact"], label[for="email"], label[for="message"] {
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 15px 0 10px 0;
+    padding-bottom: 6px;
+    background: linear-gradient(to right, #FFFFFF, #FFFFFF) no-repeat;
+    background-size: 30% 1px;
+    background-position-y: 20px;
+    -ms-background-position-y: 20px;
+    transition: 0.1s all ease-in-out;
+}
+
+.content-form .message textarea {
+    width: 100%;
+    height: 150px;
+}
+.name {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+}
+
+.contact-raison {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+}
+
+.email {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+}
+
+.message {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+}
+
+.name input:focus ~ label {
+    color: #FFFFFF;
+    font-weight: 800;
+    text-shadow: 0 2px 3px black;
+    background-size: 100% 1px;
+}
+
+.contact-raison select:focus ~ label {
+    color: #FFFFFF;
+    font-weight: 800;
+    text-shadow: 0 2px 3px black;
+    background-size: 100% 1px;
+}
+
+.email input:focus ~ label {
+    color: #FFFFFF;
+    font-weight: 800;
+    text-shadow: 0 2px 3px black;
+    background-size: 100% 1px;
+
+}
+
+.message textarea:focus ~ label {
+    color: #FFFFFF;
+    font-weight: 800;
+    text-shadow: 0 2px 3px black;
+    background-size: 100% 1px;
+}
+
+
+.form-container .send {
+    text-align: end;
+    margin-top: 25px;
+    position: relative;
+}
+
+.form-container .send input{
+    border: 3px solid #330036;
+    height: 30px;
+    width: 100px;
+    background: none;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.form-container .send input:hover {
+    background-color: #330036;
+    color: white;
+    border: 2px solid white;
 }
