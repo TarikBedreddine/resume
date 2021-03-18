@@ -9,7 +9,11 @@
     <!--STYLESHEET-CSS / FONTS-->
     <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,600;1,700&display=swap" rel="stylesheet">
+    <!--FAVICONES -->
+    <script src="https://kit.fontawesome.com/a5376696a6.js" crossorigin="anonymous"></script>
+
 </head>
 
 
@@ -62,7 +66,7 @@
                 </section>
             </div>
 
-<!--            SLIDE 2BIS COMPETENCES -->
+<!--            SLIDE 3 DESIGN & COMPUTING/LANGUAGES COMPETENCES -->
 
             <div class="slide three">
                 <section class="content-three">
@@ -82,8 +86,46 @@
                 </section>
             </div>
 
+<!--            SLIDE 4 CAROUSEL USING THE CHECKBOX METHOD -->
+
             <div class="slide four">
-                Slide Four
+                <section class="content-four">
+                    <h2>Expériences</h2>
+                    <ul class="accordion">
+                        <li class="sub-accordion">
+                            <input type="radio" id="experience1" name="menu">
+                            <label for="experience1" class="accordion-label"><span class="job-title">ACHAT & REVENTE D'ELECTROMENAGER |</span> MICRO-ENTREPRISE</label>
+                            <ul class="sub">
+                                <li>Création du site internet via Wordpress</li>
+                                <li>Achats de lots auprès de centrales d'achats</li>
+                                <li>Gestion de l'intégralité du processus de vente</li>
+                            </ul>
+                        </li>
+                        <li class="sub-accordion">
+                            <input type="radio" id="experience2" name="menu">
+                            <label for="experience2" class="accordion-label"><span class="job-title">CHEF D'EQUIPE JUNIOR |</span> EASYDIS</label>
+                            <ul class="sub">
+                                <li>Supervision des préparateurs de commandes et des
+                                        réceptionnaires</li>
+                                <li>Suivi des indicateurs de performance</li>
+                                <li>Organisation et gestion du flux entrant</li>
+                                <li>Mise en place d'outils et de méthodes afin
+                                        d'optimiser les expéditions et le taux de qualité</li>
+                            </ul>
+                        </li>
+                        <li class="sub-accordion">
+                            <input type="radio" id="experience3" name="menu">
+                            <label for="experience3" class="accordion-label"><span class="job-title">COMMERCIAL |</span> CIMM IMMOBILIER</label>
+                            <ul class="sub">
+                                <li>Accueil physique et téléphonique</li>
+                                <li>Prospection de nouveaux mandats et visite des
+                                        biens de l'agence</li>
+                                <li>Tâches administratives et gestion des publicités</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </section>
             </div>
             <div class="slide five">
                 Slide Five

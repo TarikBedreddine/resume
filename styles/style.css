@@ -158,7 +158,10 @@ h3 {
     width: 90%;
     height: 80%;
     color: white;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .programming-languages {
@@ -251,11 +254,6 @@ h3 {
     text-align: center;
 }
 
-.content-three-design {
-
-}
-
-
 .content-three-design img {
     width: 110px;
     height: auto;
@@ -280,7 +278,7 @@ h3 {
 
 .four:before {
     content: "";
-    display: inline-block;
+    position: absolute;
     height: 100vh;
     width: 100vw;
     background: url("/../images/backgrounds/bg-4.png") no-repeat center center;
@@ -291,7 +289,98 @@ h3 {
 }
 
 .four {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.content-four {
+    position: relative;
+    width: 90%;
+    height: 80%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.accordion {
+    background-color: antiquewhite;
+    position: relative;
+    width: 70%;
+    color: black;
+}
+
+.sub-accordion {
+    padding: 20px 0 0 0;
+    list-style: none;
+
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.sub > li {
+    height: 0;
+    overflow: hidden;
+}
+
+.sub{
+    padding-top: 20px;
+}
+
+.sub li::before{
+    font-family: "Font Awesome 5 Free";
+    font-size: 13px;
+    content: '\f192';
+    margin-right: 5px;
+}
+
+input:checked ~ .sub li {
+    height: 3em;
+    font-family: Montserrat, sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.sub-accordion .accordion-label {
+    position: relative;
+    display: block;
+    height: 30px;
+    cursor: pointer;
+    font-family: Montserrat, sans-serif;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.accordion-label:hover {
+    color: #651969;
+    text-shadow: #393737 0.2px 0 0;
+}
+
+.accordion-label::after {
+    font-family: "Font Awesome 5 Free";
+    content: '\f067';
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    position: absolute;
+    right: 30px;
+    top: 0;
+    transition: 0.5s;
+}
+
+input:checked ~ .accordion-label::after {
+    content: '\f068';
+    color: black;
+}
+
+.job-title {
+    font-weight: bold;
+    font-style: normal;
 }
 
 /* SLIDE N°5 */
