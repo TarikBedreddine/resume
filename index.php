@@ -46,7 +46,7 @@
             <div class="slide two">
                 <section class="content-two">
                         <h2>Développement</h2>
-                        <div class="rectangle-background">
+                        <div class="bg-rectangle">
                             <article class="programming-languages">
                                 <img src="images/slide-2/html.png" alt="html logo">
                                 <img src="images/slide-2/css.png" alt="css logo">
@@ -70,13 +70,13 @@
 
             <div class="slide three">
                 <section class="content-three">
-                    <div class="rectangle-background-1">
+                    <div class="bg-rectangle-1">
                         <article class="content-three-design">
                             <h3>Graphisme</h3>
                             <img src="images/slide-3/design.png" alt="Graphisme">
                         </article>
                     </div>
-                    <div class="rectangle-background-2">
+                    <div class="bg-rectangle-2">
                         <article class="content-three-languages">
                             <h3>Informatique & Langues</h3>
                             <img src="images/slide-3/computer.png" alt="Ordinateur">
@@ -128,7 +128,26 @@
                 </section>
             </div>
             <div class="slide five">
-                Slide Five
+                <section class="content-five">
+                    <h2>Hobbys</h2>
+                    <div class="container">
+                        <article class="hobby-card">
+                            <img src="images/slide-5/trading.jpg" alt="Image de Trading">
+                            <span class="text-center">Trading</span>
+                        </article>
+                        <article class="hobby-card">
+                            <img src="images/slide-5/football.png" alt="Image de Football">
+                            <span class="text-center">Football</span>
+                        </article>
+                        <article class="hobby-card">
+                            <img src="images/slide-5/jeux-videos.png" alt="Image de Jeux-vidéos">
+                            <span class="text-center">Jeux-vidéos</span>
+                        </article>
+                    </div>
+
+
+
+                </section>
             </div>
             <div class="slide six">
                 Slide Six

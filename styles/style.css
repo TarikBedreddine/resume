@@ -207,7 +207,7 @@ h3 {
     padding: 60px 200px 0 200px;
 }
 
-.content-two .rectangle-background {
+.content-two .bg-rectangle {
     width: 1000px;
     height: 320px;
     background: linear-gradient(0deg, #47565D 6.58%, rgba(133, 108, 107, 0) 100%);
@@ -240,14 +240,14 @@ h3 {
     align-items: center;
 }
 
-.content-three .rectangle-background-1 {
+.content-three .bg-rectangle-1 {
     background: linear-gradient(100.13deg, rgba(241, 250, 238, 0.2) 6.8%, rgba(241, 250, 238, 0.05) 94.47%);
     width: 70%;
     height: 45%;
     text-align: center;
 }
 
-.content-three .rectangle-background-2 {
+.content-three .bg-rectangle-2 {
     background: linear-gradient(273.14deg, rgba(241, 250, 238, 0.28) 66.73%, rgba(241, 250, 238, 0.1) 91.89%);
     width: 70%;
     height: 45%;
@@ -307,7 +307,7 @@ h3 {
 .accordion {
     background-color: antiquewhite;
     position: relative;
-    width: 70%;
+    width: 80%;
     color: black;
 }
 
@@ -353,6 +353,7 @@ input:checked ~ .sub li {
     font-family: Montserrat, sans-serif;
     font-style: italic;
     font-weight: 300;
+    font-size: 15px;
 }
 
 .accordion-label:hover {
@@ -372,22 +373,26 @@ input:checked ~ .sub li {
     top: 0;
     transition: 0.5s;
 }
+.accordion-label:hover::after {
+    color: #651969;
+}
 
 input:checked ~ .accordion-label::after {
     content: '\f068';
-    color: black;
+    color: #651969;
 }
 
 .job-title {
     font-weight: bold;
     font-style: normal;
+    font-size: 16px;
 }
 
 /* SLIDE N°5 */
 
 .five:before {
     content: "";
-    display: inline-block;
+    position: absolute;
     height: 100vh;
     width: 100vw;
     background: url("/../images/backgrounds/bg-5.png") no-repeat center center;
@@ -395,12 +400,99 @@ input:checked ~ .accordion-label::after {
     -moz-background-size: cover;
     -o-background-size: cover;
     opacity: 0.6;
+    z-index: -2;
 }
 
 .five {
-
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.content-five {
+    position: relative;
+    width: 90%;
+    height: 80%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-five .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hobby-card {
+    position: relative;
+    width: 215px;
+    height: 266px;
+    background-color: black;
+    text-align: center;
+    transition: 0.2s all ease-out;
+    margin-left: 35px;
+}
+.hobby-card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f8f5f8;
+    border-radius: 5px;
+    z-index: -1;
+    transition: 0.5s all ease-in-out;
+}
+
+.hobby-card:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 4px;
+    z-index: -1;
+    transition: 0.3s all ease-in-out;
+}
+.hobby-card:hover, .hobby-card img:hover  {
+    width: 220px;
+    height: 272px;
+}
+
+.hobby-card:hover:before {
+    transform: rotate(5deg);
+}
+.hobby-card:hover:after {
+    transform: rotate(10deg);
+}
+
+.hobby-card img {
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+    transition: 1s all ease-in-out;
+}
+
+.hobby-card .text-center {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Montserrat, sans-serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 30px;
+    text-shadow: 0 5px 5px black;
+}
+
+
 
 /* SLIDE N°6 */
 
