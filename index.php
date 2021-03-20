@@ -33,10 +33,14 @@
                             <h1>Tarik, <br> Développeur Web</h1>
                             <div class="flex-img_paragraph">
                                 <img src="images/slide-1/me.jpg" alt="Ma photo">
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                    when an unknown printer took a galley of type and scrambled it.
-                                </p>
+                                <div class="a-propos">
+                                    <span class="smiley-animation" id="smiley-animation"></span>
+                                    <h3 id="h3-a-propos">A propos de Moi  </h3>
+                                    <p>Issu d'études en Commerce et Management, j'ai décidé
+                                        de regagner un domaine qui me passionne depuis longtemps: le <span>Développement web</span>. <br>
+                                        <span>Autonome, curieux et motivé</span>, j'ai pour objectif de devenir développeur Full-Stack.
+                                    </p>
+                                </span>
                             </div>
                     </section>
             </div>
@@ -46,23 +50,35 @@
             <div class="slide two">
                 <section class="content-two">
                         <h2>Développement</h2>
-                        <div class="bg-rectangle">
-                            <article class="programming-languages">
-                                <img src="images/slide-2/html.png" alt="html logo">
-                                <img src="images/slide-2/css.png" alt="css logo">
-                                <img src="images/slide-2/php.png" alt="php logo">
-                                <img src="images/slide-2/js.png" alt="js logo">
-                                <img src="images/slide-2/java.png" alt="java logo">
-                            </article>
-                            <article class="tools-container">
-                                <div class="tools">
-                                    <img src="images/slide-2/vs-code.png" alt="vs-code logo">
-                                    <img src="images/slide-2/phpstorm.png" alt="php storm logo">
-                                    <img src="images/slide-2/git.png" alt="git logo">
-                                    <img src="images/slide-2/trello.png" alt="trello logo">
-                                </div>
-                            </article>
+                    <div class="card-animation">
+                        <div class="card-1" id="card-1">
+                            <div class="front-card">
+                                <article class="programming-languages">
+                                    <img src="images/slide-2/html.png" alt="html logo">
+                                    <img src="images/slide-2/css.png" alt="css logo">
+                                    <img src="images/slide-2/php.png" alt="php logo">
+                                    <img src="images/slide-2/js.png" alt="js logo">
+                                    <img src="images/slide-2/java.png" alt="java logo">
+                                </article>
+                                <article class="tools-container">
+                                    <div class="tools">
+                                        <img src="images/slide-2/vs-code.png" alt="vs-code logo">
+                                        <img src="images/slide-2/phpstorm.png" alt="php storm logo">
+                                        <img src="images/slide-2/git.png" alt="git logo">
+                                        <img src="images/slide-2/trello.png" alt="trello logo">
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="back-card">
+                                <h3>Mes compétences de dév</h3>
+                                <ul>
+                                    <li>Figma (outil de maquettage)/ Photoshop / Inkscape</li>
+                                    <li>OS Linux / Windows</li>
+                                    <li>Télécharger la plaquette du Campus</li>
+                                </ul>
+                            </div>
                         </div>
+                    </div>
                 </section>
             </div>
 
@@ -70,18 +86,42 @@
 
             <div class="slide three">
                 <section class="content-three">
-                    <div class="bg-rectangle-1">
-                        <article class="content-three-design">
-                            <h3>Graphisme</h3>
-                            <img src="images/slide-3/design.png" alt="Graphisme">
-                        </article>
+                    <div class="card-animation">
+                        <div class="card-2" id="card-2">
+                            <div class="front-card">
+                                <article class="content-three-design">
+                                    <h3>Graphisme</h3>
+                                    <img src="images/slide-3/design.png" alt="Graphisme">
+                                </article>
+                            </div>
+                            <div class="back-card">
+                                <h3>Mes compétences graphiques</h3>
+                                <ul>
+                                    <li>Figma (outil de maquettage)/ Photoshop / Inkscape</li>
+                                    <li>OS Linux / Windows</li>
+                                    <li>Télécharger la plaquette du Campus</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="bg-rectangle-2">
-                        <article class="content-three-languages">
-                            <h3>Informatique & Langues</h3>
-                            <img src="images/slide-3/computer.png" alt="Ordinateur">
-                            <img src="images/slide-3/language.png" alt="Langues">
-                        </article>
+                    <div class="card-animation">
+                        <div class="card-2" id="card-2">
+                            <div class="front-card">
+                                <article class="content-three-languages">
+                                    <h3>Informatique & Langues</h3>
+                                    <img src="images/slide-3/computer.png" alt="Ordinateur">
+                                    <img src="images/slide-3/language.png" alt="Langues">
+                                </article>
+                            </div>
+                            <div class="back-card">
+                                <h3>Mes compétences graphiques</h3>
+                                <ul>
+                                    <li>Figma (outil de maquettage)/ Photoshop / Inkscape</li>
+                                    <li>OS Linux / Windows</li>
+                                    <li>Télécharger la plaquette du Campus</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </div>
