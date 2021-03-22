@@ -14,19 +14,20 @@ h2 {
     font-family: Montserrat, sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 60px;
+    font-size: 40px;
     line-height: 98px;
     text-align: center;
     letter-spacing: 0.425em;
     color: #330036;
-    margin-top: 25px
+    margin-top: 50px;
+    margin-bottom: 10px;
 }
 
 h3 {
     font-family: Montserrat, sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 20px;
     line-height: 49px;
     text-align: center;
     color: white;
@@ -156,12 +157,12 @@ a {
 .content-one h1 {
     font-family: Montserrat, sans-serif;
     font-weight: 900;
-    font-size: 60px;
+    font-size: 50px;
     color: #330036;
     line-height: 80px;
     letter-spacing: 0.46em;
-    width: 100%;
-    text-indent: -650px;
+    width: 93%;
+    text-indent: -540px;
 }
 
 .flex-img_paragraph {
@@ -169,7 +170,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 .a-propos {
@@ -183,9 +184,9 @@ a {
 .smiley-animation {
     background-image: url(/../images/icons/smiley-lunettes.png);
     position: absolute;
-    left: 290px;
-    top: 45px;
-    background-size: 38px auto;
+    left: 205px;
+    top: 50px;
+    background-size: 30px auto;
     background-repeat: no-repeat;
     display: inline-block;
     width: 45px;
@@ -230,7 +231,7 @@ a {
 .a-propos p {
     font-family: Montserrat, sans-serif;
     font-weight: 500;
-    font-size: 17px;
+    font-size: 15px;
     line-height: 30px;
 }
 
@@ -241,7 +242,7 @@ a {
 
 
 .content-one img {
-    width: 200px;
+    width: 190px;
     height: auto;
     margin-right: 70px;
     padding-right: 10px;
@@ -276,43 +277,10 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 .content-two h2{
-    margin: 10px;
-}
-
-.programming-languages {
-    width: 80%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.programming-languages img{
-    width: 100px;
-    height: auto;
-}
-
-.tools-container {
-    width: 100%;
-}
-
-.tools-container .tools img:first-child {
-    width: 57px;
-    height: auto;
-}
-.tools-container .tools img:nth-child(2) {
-    width: 61px;
-    height: auto;
-}
-.tools-container .tools img:nth-child(3) {
-    width: 131px;
-    height: auto;
-}
-.tools-container .tools img:last-child {
-    width: 163px;
-    height: auto;
+    margin: 20px;
 }
 
 .tools-container .tools {
@@ -320,12 +288,12 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px 200px 0 200px;
+    padding: 60px 250px 0 250px;
 }
 
 .content-two .card-1 {
     width: 1000px;
-    height: 400px;
+    height: 370px;
     text-align: center;
     transform-style: preserve-3d;
     transition: 1s all ease-in-out;
@@ -333,7 +301,6 @@ a {
 .content-two .card-animation {
     width: 1000px;
     height: 320px;
-    margin-top: 20px;
     text-align: center;
 }
 
@@ -351,6 +318,38 @@ a {
     align-items: center;
     backface-visibility: hidden;
     background: linear-gradient(0deg, #47565D 6.58%, rgba(133, 108, 107, 0) 100%);
+}
+
+.programming-languages {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.programming-languages img{
+    width: 85px;
+    height: auto;
+}
+
+.tools-container {
+    width: 100%;
+}
+
+.tools-container .tools img:first-child {
+    width: calc(57px - 10px);
+    height: auto;
+}
+.tools-container .tools img:nth-child(2) {
+    width: calc(61px - 10px);
+    height: auto;
+}
+.tools-container .tools img:nth-child(3) {
+    width: calc(131px - 30px);
+    height: auto;
+}
+.tools-container .tools img:last-child {
+    width: calc(163px - 30px);
+    height: auto;
 }
 
 .content-two .back-card {
@@ -382,10 +381,8 @@ a {
     border-collapse: collapse;
     border-spacing: 0;
     width: 90%;
-    height: 80%;
     padding: 30px;
     color: white;
-    /*box-shadow: 0 5px 25px black;*/
 }
 
 .table-competences th {
@@ -456,8 +453,8 @@ a {
     align-items: center;
 }
 .content-three .card-animation {
-    width: 60%;
-    height: 45%;
+    width: 50%;
+    height: 40%;
 }
 
 .content-three .card-2 {
@@ -507,14 +504,25 @@ a {
     padding-top: 10px;
     color: white;
     font-family: Montserrat, sans-serif;
-    font-size: 20px;
     font-weight: 600;
     text-shadow: black 1px 1px 0;
     text-align: initial;
     list-style: circle;
 }
 
+/*BACKGROUND TRANSITION BETWEEN SLIDE 3 AND 4 */
 
+.bg-transition {
+    background: url(/../images/backgrounds/transition.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    width: 70px;
+    height: 760px;
+    z-index: 1;
+    position: absolute;
+    left: 4575px;
+}
 /* SLIDE N°4 */
 
 .four:before {
@@ -568,7 +576,7 @@ input[type="radio"] {
 }
 
 .sub{
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .sub li::before{
@@ -582,7 +590,7 @@ input:checked ~ .sub li {
     height: 3em;
     font-family: Montserrat, sans-serif;
     font-weight: 300;
-    font-size: 15px;
+    font-size: 14px;
     transition: all 0.3s ease-in-out;
 }
 
@@ -626,7 +634,7 @@ input:checked ~ .accordion-label::after {
 .job-title {
     font-weight: bold;
     font-style: normal;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 /* SLIDE N°5 */
@@ -665,17 +673,19 @@ input:checked ~ .accordion-label::after {
     height: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .hobby-card {
     position: relative;
-    width: 215px;
-    height: 266px;
+    width: 195px;
+    height: 242px;
     background-color: black;
     text-align: center;
-    transition: 0.2s all ease-out;
+    transition: 0.3s all ease-out;
     margin-left: 55px;
+
+
 }
 .hobby-card:before {
     content: "";
@@ -703,8 +713,8 @@ input:checked ~ .accordion-label::after {
     transition: 0.3s all ease-in-out;
 }
 .hobby-card:hover, .hobby-card img:hover  {
-    width: 220px;
-    height: 272px;
+    width: calc(195px + 10px);
+    height: calc(242px + 10px);
 }
 
 .hobby-card:hover:before {
@@ -778,7 +788,7 @@ input:checked ~ .accordion-label::after {
 
 .content-form input[type="text"], input[type="email"], select, textarea {
     width: 100%;
-    height: 35px;
+    height: 27px;
     border: white;
     outline: none;
 }
@@ -798,8 +808,8 @@ label[for="nom_et_prenom"], label[for="raison_de_contact"], label[for="email"], 
 }
 
 .content-form .message textarea {
-    width: 100%;
-    height: 150px;
+    max-width: 100%;
+    height: 100px;
 }
 .name {
     display: flex;

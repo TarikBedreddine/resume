@@ -37,8 +37,6 @@ $filters = [
         }
     }
 
-    var_dump($myInputs);
-
 ?>
 
 <!doctype html>
@@ -200,6 +198,9 @@ $filters = [
                     </div>
                 </section>
             </div>
+
+<!--            TRANSITION BETWEEN COMPETENCES & EXPERIENCES  -->
+            <div class="bg-transition"></div>
 
 <!--            SLIDE 4 CAROUSEL USING THE CHECKBOX METHOD -->
 
