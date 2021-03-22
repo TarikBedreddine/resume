@@ -1,3 +1,46 @@
+<?php
+
+$filters = [
+    'nomprenom' => FILTER_SANITIZE_STRING,
+    'objet' => FILTER_SANITIZE_STRING,
+    'email' => FILTER_VALIDATE_EMAIL,
+    'message' => FILTER_SANITIZE_STRING,
+    'send' => FILTER_SANITIZE_STRING,
+];
+    $myInputs = filter_input_array(INPUT_POST, $filters);
+
+    if (isset($myInputs)) {
+        $nomprenom = $myInputs['nomprenom'];
+        $objet = $myInputs['objet'];
+        $email = $myInputs['email'];
+        $message = $myInputs['message'];
+        $send = $myInputs['send'];
+    }
+
+    $isSend = false;
+
+
+    if (isset($send)) {
+        if (isset($nomprenom) && !empty($nomprenom)
+            && isset($objet) && !empty($objet)
+            && isset($email) && !empty($email)
+            && isset($message) && !empty($message)
+        ) {
+            $targetMail = "tarik.bedreddine@yahoo.com";
+
+            $bodyHtml = "Nom & Prénom : " . $nomprenom . PHP_EOL;
+            $bodyHtml .= "Email : " . $email . PHP_EOL;
+            $bodyHtml .= "Message : " . $message . PHP_EOL;
+
+//            mail($targetMail, $objet, $bodyHtml);
+            $isSend = true;
+        }
+    }
+
+    var_dump($myInputs);
+
+?>
+
 <!doctype html>
 <html lang="fr">
 <head>
@@ -16,6 +59,16 @@
 
 </head>
 
+<!--            NAVIGATION -->
+<div class="nav-slide">
+    <a href="#accueil"></a>
+    <a href="#competences"></a>
+    <a href="#competences-2"></a>
+    <a href="#experiences"></a>
+    <a href="#hobbys"></a>
+    <a href="#contact"></a>
+</div>
+
 
 <body>
 <main>
@@ -28,7 +81,7 @@
 
 <!--            SLIDE 1 ABOUT ME -->
 
-            <div class="slide one">
+            <div class="slide one" id="accueil">
                     <section class="content-one">
                             <h1>Tarik, <br> Développeur Web</h1>
                             <div class="flex-img_paragraph">
@@ -47,7 +100,7 @@
 
 <!--            SLIDE 2 MAJOR COMPETENCES -->
 
-            <div class="slide two">
+            <div class="slide two" id="competences">
                 <section class="content-two">
                         <h2>Développement</h2>
                     <div class="card-animation">
@@ -70,12 +123,34 @@
                                 </article>
                             </div>
                             <div class="back-card">
-                                <h3>Mes compétences de dév</h3>
-                                <ul>
-                                    <li>Figma (outil de maquettage)/ Photoshop / Inkscape</li>
-                                    <li>OS Linux / Windows</li>
-                                    <li>Télécharger la plaquette du Campus</li>
-                                </ul>
+                                    <table class="table-competences">
+                                        <tr>
+                                            <th>Langages</th>
+                                            <th colspan="5">Notions abordés</th>
+                                        </tr>
+                                        <tr>
+                                            <td>HTML / CSS</td>
+                                            <td colspan="4">Gestion du responsive d'un site & des formulaires, Utilisation du Framework BOOSTRAP</td>
+                                        </tr>
+                                        <tr>
+                                            <td>PHP </td>
+                                            <td colspan="4">Conception d'une Base de donnée, requêtes SQL, utilisation du modèle MVC, framework LARAVEL</td>
+                                        </tr>
+                                        <tr>
+                                            <td>JS</td>
+                                            <td colspan="4">Mise en place d'un projet Front-end avec le Framework React, développer une application mobile en utilisant le Framework React
+                                                Native</td>
+                                        </tr>
+                                        <tr>
+                                            <td>JAVA</td>
+                                            <td colspan="4">Maitriser les bases de la programmation orientée objet, manipuler des collections d’objets
+                                            , accéder à des données via JDBC, mettre en œuvre le pattern DAO</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Soft skills</td>
+                                            <td colspan="4">AGILE & Méthode SCRUM, maitrise de l'application GIT et du dépôt distant GIT HUB, kanban Trello, théâtre</td>
+                                        </tr>
+                                    </table>
                             </div>
                         </div>
                     </div>
@@ -84,7 +159,7 @@
 
 <!--            SLIDE 3 DESIGN & COMPUTING/LANGUAGES COMPETENCES -->
 
-            <div class="slide three">
+            <div class="slide three" id="competences-2">
                 <section class="content-three">
                     <div class="card-animation">
                         <div class="card-2" id="card-2">
@@ -95,11 +170,11 @@
                                 </article>
                             </div>
                             <div class="back-card">
-                                <h3>Mes compétences graphiques</h3>
                                 <ul>
-                                    <li>Figma (outil de maquettage)/ Photoshop / Inkscape</li>
-                                    <li>OS Linux / Windows</li>
-                                    <li>Télécharger la plaquette du Campus</li>
+                                    <li>Figma (outil de maquettage) / Photoshop / Inkscape</li>
+                                    <li>Montage vidéo (Sony Vegas & After effect)</li>
+                                    <li>Notions d'UX/UI</li>
+
                                 </ul>
                             </div>
                         </div>
@@ -114,11 +189,11 @@
                                 </article>
                             </div>
                             <div class="back-card">
-                                <h3>Mes compétences graphiques</h3>
                                 <ul>
-                                    <li>Figma (outil de maquettage)/ Photoshop / Inkscape</li>
-                                    <li>OS Linux / Windows</li>
-                                    <li>Télécharger la plaquette du Campus</li>
+                                    <li>OS Linux (distribution Ubuntu) / Windows</li>
+                                    <li>Bases en Maintenance</li>
+                                    <li>ERP GOLD (Groupe Casino)</li>
+                                    <li>Anglais : 845 au TOIC</li>
                                 </ul>
                             </div>
                         </div>
@@ -128,7 +203,7 @@
 
 <!--            SLIDE 4 CAROUSEL USING THE CHECKBOX METHOD -->
 
-            <div class="slide four">
+            <div class="slide four" id="experiences">
                 <section class="content-four">
                     <h2>Expériences</h2>
                     <ul class="accordion">
@@ -170,7 +245,7 @@
 
 <!--            SLIDE 5 HOBBYS-->
 
-            <div class="slide five">
+            <div class="slide five" id="hobbys">
                 <section class="content-hobby">
                     <h2>Hobbys</h2>
                     <div class="hobby-container">
@@ -191,18 +266,18 @@
             </div>
 
 <!--            SLIDE CONTACT FORM -->
-
-            <div class="slide six">
+            <?php if ($isSend == false) :?>
+            <div class="slide six" id="contact">
                 <section class="content-form">
                     <h2>Me contacter</h2>
                     <div class="form-container">
-                        <form action="">
+                        <form action="#" method="post">
                             <div class="name">
                                 <input type="text" name="nomprenom" id="nom_et_prenom" required>
                                 <label for="nom_et_prenom">Votre Nom et Prénom : </label>
                             </div>
                             <div class="contact-raison">
-                                <select name="raisoncontact" id="raison_de_contact" required>
+                                <select name="objet" id="raison_de_contact" required>
                                     <option value=""></option>
                                     <option value="Demande de renseignement">Demande de renseignement</option>
                                     <option value="RDV">Programmer un RDV</option>
@@ -219,13 +294,23 @@
                                 <label for="message">Message : </label>
                             </div>
                             <div class="send">
-                                <input type="submit" value="Envoyer">
+                                <input type="submit" name="send" value="Envoyer">
                             </div>
                         </form>
                     </div>
                 </section>
             </div>
-
+            <?php else: ?>
+            <div class="slide six" id="contact">
+                <section class="content-form">
+                    <div class="form-sucess">
+                        <h2>Merci !</h2>
+                        <p>J'ai bien reçu votre message, je vous recontacte rapidement ! </p>
+                        <button><a href="">Envoyez un autre message</a></button>
+                    </div>
+                </section>
+            </div>
+            <?php endif; ?>
         </div>
     </div>
 </main>

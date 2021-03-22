@@ -33,6 +33,10 @@ h3 {
     text-shadow: 0 2px 4px #330036;
 }
 
+a {
+    text-decoration: none;
+}
+
 .container {
     margin: 50px 0;
 }
@@ -68,6 +72,57 @@ h3 {
 ::-webkit-scrollbar {
     display: none;
 }
+
+/* NAVIGATION DOTS */
+
+.nav-slide {
+    position: fixed;
+    width: 35%;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 25px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+}
+.nav-slide a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.nav-slide a:first-child {
+    background: url("/../images/icons/me.png");
+    background-size: cover;
+}
+.nav-slide a:nth-child(2) {
+    background: url("/../images/icons/development.png");
+    background-size: cover;
+}
+.nav-slide a:nth-child(3) {
+    background: url("/../images/icons/competences.png");
+    background-size: cover;
+}
+.nav-slide a:nth-child(4) {
+    background: url("/../images/icons/experiences.png");
+    background-size: cover;
+}
+.nav-slide a:nth-child(5) {
+    background: url("/../images/icons/hobbys.png");
+    background-size: cover;
+}
+.nav-slide a:last-child {
+    background: url("/../images/icons/contact.png");
+    background-size: cover;
+}
+
+.nav-slide a:hover {
+    border: 5px white groove;
+}
+
 
 /* SLIDE N°1 */
 
@@ -224,6 +279,10 @@ h3 {
     justify-content: center;
 }
 
+.content-two h2{
+    margin: 10px;
+}
+
 .programming-languages {
     width: 80%;
     display: flex;
@@ -266,7 +325,7 @@ h3 {
 
 .content-two .card-1 {
     width: 1000px;
-    height: 320px;
+    height: 400px;
     text-align: center;
     transform-style: preserve-3d;
     transition: 1s all ease-in-out;
@@ -274,7 +333,7 @@ h3 {
 .content-two .card-animation {
     width: 1000px;
     height: 320px;
-    margin-top: 50px;
+    margin-top: 20px;
     text-align: center;
 }
 
@@ -318,6 +377,38 @@ h3 {
     list-style: none;
     color: white;
     font-family: Montserrat, sans-serif;
+}
+.table-competences{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 90%;
+    height: 80%;
+    padding: 30px;
+    color: white;
+    /*box-shadow: 0 5px 25px black;*/
+}
+
+.table-competences th {
+    text-shadow: #393737 2px 3px 0;
+    font-family: Montserrat, sans-serif;
+    padding: 20px 0;
+    background: linear-gradient(0deg, #47565D 5%, rgba(133, 108, 107, 0) 100%);
+}
+.table-competences th:first-child{
+    padding-left: 10px;
+}
+
+.table-competences tr:nth-child(even){
+    background: linear-gradient(90deg, #5f727a 0%, rgba(133, 108, 107, 0.5) 18%);
+}
+.table-competences tr td {
+    padding: 15px 0;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+}
+.table-competences tr td:first-child{
+    font-weight: 800;
 }
 
 /* SLIDE N°3 */
@@ -403,7 +494,7 @@ h3 {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     transform: rotateY(180deg);
-    background-color: rgba(186, 188, 186, 0.7);
+    background-color: rgba(150, 150, 150, 0.5);
 }
 
 .content-three .back-card h3{
@@ -413,9 +504,14 @@ h3 {
 }
 
 .content-three .back-card ul li{
-    list-style: none;
-    color: #140116;
+    padding-top: 10px;
+    color: white;
+    font-family: Montserrat, sans-serif;
     font-size: 20px;
+    font-weight: 600;
+    text-shadow: black 1px 1px 0;
+    text-align: initial;
+    list-style: circle;
 }
 
 
@@ -671,6 +767,11 @@ input:checked ~ .accordion-label::after {
     justify-content: center;
 }
 
+.content-form h2{
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
 .form-container {
     width: 50%;
 }
@@ -753,7 +854,6 @@ label[for="nom_et_prenom"], label[for="raison_de_contact"], label[for="email"], 
     background-size: 100% 1px;
 }
 
-
 .form-container .send {
     text-align: end;
     margin-top: 25px;
@@ -776,3 +876,46 @@ label[for="nom_et_prenom"], label[for="raison_de_contact"], label[for="email"], 
     color: white;
     border: 2px solid white;
 }
+
+.form-sucess {
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 600px;
+    height: 300px;
+    text-align: center;
+}
+
+.form-sucess p {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 0 80px;
+    color: white;
+    text-shadow: 0 2px 2px black;
+}
+
+.form-sucess h2 {
+    margin: 10px;
+}
+
+.form-sucess a {
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+.form-sucess button {
+    background-color: #662125;
+    border: none;
+    width: 220px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.form-sucess button:hover {
+    background-color: transparent;
+    border: #662125 2px solid;
+    width: 220px;
+    height: 30px;
+}
+
+
